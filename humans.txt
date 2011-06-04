@@ -1,0 +1,13 @@
+/* TEAM */
+	Your Title: Your Name
+	Site:
+	Twitter:
+	Location:
+
+
+
+/* SITE */
+	Last update: 
+	Standards: HTML5, CSS3
+	Components:
+	Tools:
