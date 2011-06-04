@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="main.master.cs" Inherits="main" %>
+
+<!doctype html>
+<html lang="en">
+<head runat="server">
+	<meta charset="utf-8"> 	
+	<title></title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="application-name" content="Website Name" />
+	<meta name="msapplication-starturl" content="http://website.com/" />
+	<meta name="msapplication-tooltip" content="Website Description" />
+	<meta name="geo.region" content="US-OH" />
+	<meta name="geo.placename" content="Clyde, Ohio, United States" />
+	<meta name="geo.position" content="41.30422;-82.975192" />
+	<meta name="ICBM" content="41.30422, -82.975192" />
+    <meta name="DC.subject" lang="en" content="Dublin Core Subject" />
+    <meta name="DC.description" lang="en" content="Dublin Core Description" />
+	<link rel="author" type="text/plain" href="http://website.com/humans.txt" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<link rel="icon" type="image/ico" href="favicon.ico" />
+	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>	
+	<!--[if lt IE 9]><script src="js/html5.js" type="text/javascript"></script><![endif]-->
+</head>
+<body>
+    <form id="form1" runat="server">
+	<!--[if lt IE 7]><script type="text/javascript" src="js/ie6msg.js"></script><![endif]-->
+
+
+	<div id="main" class="container_12">
+		<asp:ContentPlaceHolder id="mainContentPlaceholder" runat="server">
+		
+		</asp:ContentPlaceHolder>
+	</div>
+
+    </form>
+
+
+	<!-- Use this snippet for a website that WILL have SSL -->
+	<!--<script type="text/javascript">
+	var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];(function (d, t) {var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; g.async = 1;g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';s.parentNode.insertBefore(g, s)}(document, 'script'));
+	</script>-->
+
+	<!-- Use this snippet for a website that will NOT have SSL -->
+	<!--<script type="text/javascript">
+	var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']]; (function (d, t) {var g = d.createElement(t), s = d.getElementsByTagName(t)[0];g.async = 1; g.src = '//www.google-analytics.com/ga.js'; s.parentNode.insertBefore(g, s)} (document, 'script'))
+	</script>-->
+</body>
+</html>
