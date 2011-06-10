@@ -10,14 +10,10 @@
 	<meta name="keywords" content="" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="application-name" content="Website Name" />
-	<meta name="msapplication-starturl" content="http://website.com/" />
-	<meta name="msapplication-tooltip" content="Website Description" />
 	<meta name="geo.region" content="US-OH" />
 	<meta name="geo.placename" content="Clyde, Ohio, United States" />
 	<meta name="geo.position" content="41.30422;-82.975192" />
 	<meta name="ICBM" content="41.30422, -82.975192" />
-    <meta name="DC.subject" lang="en" content="Dublin Core Subject" />
-    <meta name="DC.description" lang="en" content="Dublin Core Description" />
 	<link rel="author" type="text/plain" href="http://website.com/humans.txt" />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link rel="icon" type="image/ico" href="favicon.ico" />
