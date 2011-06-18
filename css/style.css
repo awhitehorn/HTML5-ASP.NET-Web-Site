@@ -3,7 +3,7 @@
   * Source: https://github.com/justinlabenne/normalize.css forked from: http://necolas.github.com/normalize.css/
   * Contains: normalization, base styles, 960 grid system (12 column only), helper classes and other nifties.
   *
-  * Inspiration and sh*t tons of learning from these projects:
+  * Inspiration taken from these projects (not a complete list):
   *	- HTML5Boilerplate
   *	- 960 Grid System
   *	- Eric Meyer
@@ -19,7 +19,7 @@ audio[controls],canvas,video{ display:inline-block; *display:inline; *zoom:1; }
 html{ font-size:100%; overflow-y:scroll; -webkit-tap-highlight-color:rgba(0,0,0,0); -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
 body{ margin:0; }
 body, button, input, select, textarea{ font-family:sans-serif;  color:#444; }
-img{ border:0; -ms-interpolation-mode:bicubic; vertical-align:middle; color:transparent; font-size:0; }
+img{ border:0; -ms-interpolation-mode:bicubic; vertical-align:middle; font-size:0; color:transparent; }
 
 /* Links
 -------------------------------------------- */
@@ -30,14 +30,6 @@ a:hover, a:active{ color:#00a;  outline:0; }
 
 /* Typography
 -------------------------------------------- */
-h1, h2, h3, h4, h5, h6{font-weight:bold;  margin:0 0 10px 0; }
-h1{font-size:25px; }
-h2{font-size:23px; }
-h3{font-size:21px; }
-h4{font-size:19px; }
-h5{font-size:17px; }
-h6{font-size:15px; }
-
 abbr[title]{ border-bottom:1px dotted; }
 b, strong{font-weight:bold; }
 blockquote{margin:1em 40px; }
@@ -48,8 +40,8 @@ pre, code, kbd, samp{ font-family:monospace,monospace;  _font-family:'courier ne
 pre{ white-space:pre;  white-space:pre-wrap;  word-wrap:break-word; }
 q{ quotes:none; }
 q:before, q:after{ content:''; content:none; }
-small{ font-size:75%; }
-sub, sup{ font-size:75%; line-height:0; position:relative; vertical-align:baseline; }
+small,sub,sup{ font-size:75%; }
+sub, sup{ line-height:0; position:relative; vertical-align:baseline; }
 sup{ top:-0.5em; }
 sub{ bottom:-0.25em; }
 
@@ -97,7 +89,7 @@ select, textarea:focus, input:focus{ outline:none; box-shadow: 0 0 15px #3366CC;
 button, 
 input[type="button"], 
 input[type="reset"], 
-input[type="submit"]{ cursor:pointer;  -webkit-appearance:button; background:#ddd url('../images/bgButton.gif') repeat-x 0 0; width:auto; overflow:visible; border:1px solid #ddd; border-bottom-color:#ccc; text-shadow:1px 1px 0 #ddd; line-height:20px !important; padding:6px 10px 5px 10px; -moz-border-radius:5px; -khtml-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; font-size:14px; }
+input[type="submit"]{ cursor: pointer; -webkit-appearance: button; background: #ddd url('../images/bgButton.gif') repeat-x 0 0; overflow:visible; border-color: #ddd #ddd #ccc #ddd; border-style: solid; border-width: 1px; text-shadow:1px 1px 0 #ddd; line-height:20px !important; padding:6px 10px 5px 10px; -moz-border-radius:5px; -khtml-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; font-size:14px; }
 
 button:hover, 
 input[type="button"]:hover, 
@@ -121,7 +113,7 @@ input[type="search"]::-webkit-search-decoration{ -webkit-appearance:none; }
 button::-moz-focus-inner, 
 input::-moz-focus-inner{ border:0; padding:0; }
 
-input.placeholder-text,textarea.placeholder-text,input:-moz-placeholder,textarea:-moz-placeholder  { color: #bbb; font-style: italic; }
+.placeholder-text,input:-moz-placeholder,textarea:-moz-placeholder  { color: #bbb; font-style: italic; }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #bbb; font-style: italic; }
 
 /* Tables
