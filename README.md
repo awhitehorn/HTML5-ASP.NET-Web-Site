@@ -1,63 +1,74 @@
 ﻿HTML5 ASP.NET Web Site
 ========
 
-## License:
-* html5shiv: MIT license
-* jQuery: MIT/GPL license
-* HTML5Doctor CSS reset: Public Domain
-* CSS Reset Reloaded: Public Domain
-* 960 Grid System: MIT/GPL license
-* Sitemaps.Net: MIT license
+## Licenses:
+* Modernizr: MIT/BSD license - http://www.modernizr.com/
+* jQuery: MIT/GPL license - http://jquery.com/
+* H5BP: The Unlicense - https://github.com/paulirish/html5-boilerplate
+* normalize css: Public Domain - https://github.com/necolas/normalize.css
+* 960 Grid System: MIT/GPL license - http://960.gs/
+* Sitemaps.Net: MIT license - http://james.newtonking.com/projects/sitemaps-net.aspx 
 #### Everything else:
 * [The Unlicense](http://unlicense.org) (aka: public domain) 
 
 
 ## Summary:
-* normalize css: https://github.com/necolas/normalize.css
-* jquery: http://jquery.com/
-* The 960 grid system by Nathan Smith injected into the "style.css" sheet. http://960.gs/. If you don't use it, remove it.
-* The "oldie" conditional <html> class to style older Internet Explorer versions. http://bit.ly/jKmkHM 
-* html5 feature detection (minimal). http://code.google.com/p/html5shiv/ 
-* Lame IE6 upgrade message, lazy on my part. http://www.ie6nomore.com/ 
-* ASP.Net website plugin that automatically generates an XML sitemap of your content (based on Web.Sitemap file) http://james.newtonking.com/projects/sitemaps-net.aspx 
+* ASP.Net lightweight H5BP ripoff using JQuery, Modernizr, normalize.css, 960 grid system, and Sitemaps.Net.
+* The "oldie" conditional <html> class to style for older IE8 and lower. http://bit.ly/jKmkHM 
+* ASP.Net website plugin that automatically generates an XML sitemap of your content (based on Web.Sitemap file) 
+* Optimized web.config with gzip, rewrite rules targetting .Net Framework 4.0
+* Download as a Template ready to be imported into Visual Studio (My Documents\Visual Studio 2010\Templates\ProjectTemplates) folder
 
 
-## Modifications you really want to make:
-#### humans.txt: 
-* adjust "team" and other aspects you wish to include OR remove it if you don't believe it to be the cats ass
-* http://humanstxt.org/
+## Adjustments and Descriptions:
+#### Bin (directory)
+* Newtonsoft.Sitemaps.dll: used to create sitemap.xml files from Web.Sitemap file
 
-#### robots.txt: 
-* adjust for any exclusions, etc
-* http://www.robotstxt.org/
+#### css (directory)
+* style.css: normalize.css, custom form element style, 960 grid, h5bp styles.
 
-#### favicon.ico: 
-* change this out with your own icon
+#### js (directory)
+* jquery-1.6.2.min.js: latest minified version
+* modernizr-2.0.6.min.js: latest minified version using a custom build
 
 #### apple-touch-icon.png: 
-* change this out with your own image or add others icons according to Apples specs
+* change this out with your own image or add others images according to Apples specs or mathias recommendations
 * http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safariwebcontent/configuringwebapplications/configuringwebapplications.html
+* http://mathiasbynens.be/notes/touch-icons#sizes
+
+#### crossdomain.xml
+* http://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html
+
+#### Error.aspx
+* Customized error page handling a few of the more common server side issues
+
+#### favicon.ico: 
+* Really?
+
+#### Global.asax
+* ASP.NET application file
+
+#### humans.txt: 
+* Adjust "team" and other aspects you wish to include OR remove it if you don't believe it to be the cats ass
+* http://humanstxt.org/
 
 #### main.master: 
-* Adjust tags in the `<head>` element to reflect information related to the site
-* NOTE: (Title, and Description/Keywords meta tags will be changed on individual pages, not the master page)
-* meta author
-* meta application-name
-* meta msapplication-starturl
-* meta msapplication-tooltip
-* meta geo.region
-* meta geo.placename
-* meta geo.position
-* meta ICBM
-* Dublin Core Subject and Description
-* link author (adjust the domain name or remove if your not using a humans.txt file)
-* html5Shim: Just inside the `</head>` and wrapped in IE conditional comment, swap out for modernizr if you require greater feature detection http://www.modernizr.com/
-* ie6Msg: Just after the `<body>` and `<form>` and wrapped in IE conditional comment, splays a large upgrade banner at the top for IE6 users
-* Google Analytics: one is for sites with http/https, the other for just http. Or remove...
-* Modify markup for your master page...do your thing boo-boo.
+* Title, Description, and Keywords meta tags will be adjusted on each indivdual descendant page, not here
+* meta author, application-name, viewport get changed here
+* Main content placeholder to for descendant page markup
+* <footer> with self-updating copyright year element and script..use it or lose it.
+* The latest JQuery library with local fallback
+* Content placeholder for use by descendant pages to add scripts and keep towards the bottom of the page
+* Google Analytics: use it or remove...now using modernize.load
+* IE6 Chrome Frame install prompt.
+* Modify the markup...do your thing boo-boo.
+
+#### robots.txt: 
+* Adjust as necessary: http://www.robotstxt.org/
+* XML sitemap data is returned by pointing the "Sitemap:" property to "http://yourwebsite.com/sitemap.axd"
 
 #### Web.config: 
-* Adjust `<authentication mode="None" />` if necessary
+* Adjust `<authentication mode="None" />` 
 * Change customErrors configuration and Error.aspx page if you have your own preferences
 * Adjust "Rewrite" rules to reflect your preferences
 * Adjust mail settings if sending email from the site
@@ -65,10 +76,20 @@
 	- SessionState/ViewState disabled globally, enable it page-by-page when needed or whatever works for you
 
 #### Web.sitemap: 
-* Self-explanatory
+* Hopefully self-explanatory
 
 
 ## Changelog:
+### v0.4 - 08/12/2011 - Update for h5bp 2.0 changes
+* Added "oldie" only and modernizr support to the html tag
+* Added dns-prefetch for googleapis.com meta tag
+* Removed loads of meta tags from the <head>
+* Replaced html5shim with modernizr custom build
+* Removed ie6msg script with chrome frame install prompt
+* Modified style.css for updated normalize.css and h5pb version changes
+* Updated JQuery version to the latest and greatest
+* Removed copyright.js file with new copyright script within main.master
+
 ### v0.3 - 06/03/2011 - Initial release
 
 
