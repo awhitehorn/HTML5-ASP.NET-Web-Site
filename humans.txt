@@ -4,10 +4,11 @@
 	Twitter:
 	Location:
 
-
+/* THANKS */
+  Names (& URL):
 
 /* SITE */
 	Last update: 
 	Standards: HTML5, CSS3
-	Components:
+	Components: Modernizr, jQuery
 	Tools:
