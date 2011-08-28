@@ -7,8 +7,8 @@
 * H5BP: The Unlicense - https://github.com/paulirish/html5-boilerplate
 * normalize css: Public Domain - https://github.com/necolas/normalize.css
 * 960 Grid System: MIT/GPL license - http://960.gs/
-* Sitemaps.Net: MIT license - http://james.newtonking.com/projects/sitemaps-net.aspx 
-#### Everything else:
+* Sitemaps.Net: MIT license - http://james.newtonking.com/projects/sitemaps-net.aspx
+## Everything else:
 * [The Unlicense](http://unlicense.org) (aka: public domain) 
 
 
