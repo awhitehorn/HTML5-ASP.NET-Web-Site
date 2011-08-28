@@ -1,1 +1,0 @@
-﻿document.write('Copyright &copy; ' + (new Date()).getFullYear() + ' ');
