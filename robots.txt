@@ -1,3 +1,4 @@
 ﻿User-agent: *
+Sitemap: http://www.example.com/sitemap.axd
 Disallow: /Error.aspx
 Allow: /
