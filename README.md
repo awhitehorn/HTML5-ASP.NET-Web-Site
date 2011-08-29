@@ -60,7 +60,7 @@
 * <footer> with self-updating copyright year element and script..use it or lose it.
 * The latest JQuery library with local fallback
 * Content placeholder for use by descendant pages to add scripts and keep towards the bottom of the page
-* Google Analytics: use it or remove...now using modernize.load
+* Google Analytics: use it or remove...
 * IE6 Chrome Frame install prompt.
 * Modify the markup...do your thing boo-boo.
 
