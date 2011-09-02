@@ -14,7 +14,7 @@
 
 
 ## Summary:
-* ASP.Net lightweight H5BP ripoff using JQuery, Modernizr, normalize.css, 960 grid system, and Sitemaps.Net.
+* ASP.Net H5BP ripoff using JQuery, Modernizr, normalize.css, 960 grid system, and Sitemaps.Net.
 * The "oldie" conditional <html> class to style for older IE8 and lower. http://bit.ly/jKmkHM 
 * ASP.Net website plugin that automatically generates an XML sitemap of your content (based on Web.Sitemap file) 
 * Optimized web.config with gzip, rewrite rules targetting .Net Framework 4.0
@@ -23,17 +23,17 @@
 
 ## Adjustments and Descriptions:
 #### Bin (directory)
-* Newtonsoft.Sitemaps.dll: used to create sitemap.xml files from Web.Sitemap file
+* Newtonsoft.Sitemaps.dll: used to create sitemap.xml files from Web.Sitemap file.
 
 #### css (directory)
-* style.css: normalize.css, custom form element style, 960 grid, h5bp styles.
+* style.css: normalize.css, 960 grid, h5bp styles.
 
 #### js (directory)
-* jquery-1.6.2.min.js: latest minified version
-* modernizr-2.0.6.min.js: latest minified version using a custom build
+* jquery-1.6.2.min.js: latest minified version.
+* modernizr-2.0.6.min.js: latest minified version using a custom build.
 
 #### apple-touch-icon.png: 
-* change this out with your own image or add others images according to Apples specs or mathias recommendations
+* change this out with your own image or add others images according to Apples specs or mathias recommendations.
 * http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safariwebcontent/configuringwebapplications/configuringwebapplications.html
 * http://mathiasbynens.be/notes/touch-icons#sizes
 
@@ -41,26 +41,26 @@
 * http://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html
 
 #### Error.aspx
-* Customized error page handling a few of the more common server side issues
+* Basic error page example. Use your own or modify to suit.
 
 #### favicon.ico: 
-* Really?
+* Self explanatory.
 
 #### Global.asax
-* ASP.NET application file
+* ASP.NET application file.
 
 #### humans.txt: 
-* Adjust "team" and other aspects you wish to include OR remove it if you don't believe it to be the cats ass
+* Adjust "team" and other aspects you wish to include OR remove it if you don't believe it to be the cats ass.
 * http://humanstxt.org/
 
 #### main.master: 
-* Title, Description, and Keywords meta tags will be adjusted on each indivdual descendant page, not here
-* meta author, application-name, viewport get changed here
-* Main content placeholder to for descendant page markup
+* Title, Description, and Keywords meta tags will be adjusted on each indivdual descendant page, not here.
+* meta author, application-name, viewport get changed here.
+* Main content placeholder to for descendant page markup.
 * <footer> with self-updating copyright year element and script..use it or lose it.
-* The latest JQuery library with local fallback
-* Content placeholder for use by descendant pages to add scripts and keep towards the bottom of the page
-* Google Analytics: use it or remove...
+* The latest JQuery library with local fallback.
+* Content placeholder for use by descendant pages to add scripts and keep towards the bottom of the page.
+* Google Analytics async script.
 * IE6 Chrome Frame install prompt.
 * Modify the markup...do your thing boo-boo.
 
@@ -70,42 +70,30 @@
 
 #### Web.config: 
 * Adjust `<authentication mode="None" />` 
-* Change customErrors configuration and Error.aspx page if you have your own preferences
-* Adjust "Rewrite" rules to reflect your preferences
-* Adjust mail settings if sending email from the site
+* Change customErrors configuration and Error.aspx page if you have your own preferences.
+* Adjust "Rewrite" rules to reflect your preferences.
+* Adjust mail settings if sending email from the site.
 * Basically, look it over real good and make the changes you need.
-	- SessionState/ViewState disabled globally, enable it page-by-page when needed or whatever works for you
+	- SessionState/ViewState disabled globally, enable it page-by-page when needed or whatever works for you.
 
 #### Web.sitemap: 
-* Hopefully self-explanatory
+* Hopefully self-explanatory.
 
 
 ## Changelog:
-### v0.4 - 08/12/2011 - Update for h5bp 2.0 changes
-* Added "oldie" only and modernizr support to the html tag
-* Added dns-prefetch for googleapis.com meta tag
-* Removed loads of meta tags from the <head>
-* Replaced html5shim with modernizr custom build
-* Removed ie6msg script with chrome frame install prompt
-* Modified style.css for updated normalize.css and h5pb version changes
-* Updated JQuery version to the latest and greatest
-* Removed copyright.js file with new copyright script within main.master
+### v0.4 - 08/12/2011 - Update for h5bp 2.0 changes.
+* Added "oldie" only and modernizr support to the html tag.
+* Added dns-prefetch for googleapis.com meta tag.
+* Removed loads of unnecessary meta tags from the <head>.
+* Replaced html5shim with modernizr custom build.
+* Removed ie6msg script with chrome frame install prompt.
+* Modified style.css for updated normalize.css and h5pb changes.
+* Updated JQuery version to the latest and greatest.
+* Removed copyright.js file with inline copyright script within main.master.
 
 ### v0.3 - 06/03/2011 - Initial release
 
 
 ## Credits:
 * favicon/apple-touch-icon: IconEden | HomePage: http://www.iconeden.com
-* http://html5boilerplate.com/
-* http://960.gs/
-* http://html5doctor.com/
-* http://www.blueprintcss.org/
-* http://meyerweb.com/
-* http://paulirish.com/
-* http://ejohn.org/category/blog/
-* http://remysharp.com/
-* http://mathiasbynens.be/
-* http://twitter.com/#!/jon_neal
-* https://github.com/afarkas
-
-tons more....but you get the idea.
+* Lots of people
