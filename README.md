@@ -81,6 +81,8 @@
 
 
 ## Changelog:
+### v0.5 - 09/04/2011 - Minor Tweaks
+
 ### v0.4 - 08/12/2011 - Update for h5bp 2.0 changes.
 * Added "oldie" only and modernizr support to the html tag.
 * Added dns-prefetch for googleapis.com meta tag.
