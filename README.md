@@ -29,7 +29,7 @@
 * style.css: normalize.css, 960 grid, h5bp styles.
 
 #### js (directory)
-* jquery-1.6.2.min.js: latest minified version.
+* jquery-1.7.1.min.js: latest minified version.
 * modernizr-2.0.6.min.js: latest minified version using a custom build.
 
 #### apple-touch-icon.png: 
@@ -81,6 +81,13 @@
 
 
 ## Changelog:
+### v0.6 - 11/29/2011
+* Update JQuery version to 1.7.1
+* Adjust main.master to reflect JQuery version changes
+* Update style.css for normalize.css project changes
+* Global.asax - Added commented out "Route" for default.aspx routing
+* Web.config - Rewrite rules for default document and lower case url's
+
 ### v0.5 - 09/04/2011 - Minor Tweaks
 
 ### v0.4 - 08/12/2011 - Update for h5bp 2.0 changes.
