@@ -1,11 +1,11 @@
-﻿<%@ Application Language="C#" %>
+﻿<%@ Import Namespace="System.Web.Routing" %>
+<%@ Application Language="C#" %>
 
 <script runat="server">
 
     void Application_Start(object sender, EventArgs e) 
     {
-        // Code that runs on application startup
-
+        //RouteTable.Routes.MapPageRoute("default", string.Empty, "~/default.aspx");
     }
     
     void Application_End(object sender, EventArgs e) 
