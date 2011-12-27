@@ -15,7 +15,7 @@
 
 ## Summary:
 * ASP.Net H5BP ripoff using JQuery, Modernizr, normalize.css, 960 grid system, and Sitemaps.Net.
-* The "oldie" conditional <html> class to style for older IE8 and lower. http://bit.ly/jKmkHM 
+* The "oldie" conditional <html> class to style for older IE9 and lower. http://bit.ly/jKmkHM 
 * ASP.Net website plugin that automatically generates an XML sitemap of your content (based on Web.Sitemap file) 
 * Optimized web.config with gzip, rewrite rules targetting .Net Framework 4.0
 * Download as a Template ready to be imported into Visual Studio (My Documents\Visual Studio 2010\Templates\ProjectTemplates) folder
@@ -40,14 +40,17 @@
 #### crossdomain.xml
 * http://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html
 
-#### Error.aspx
+#### default.aspx
+* Thrown in for the heck of it, you'll probably need one
+
+#### error.aspx
 * Basic error page example. Use your own or modify to suit.
 
 #### favicon.ico: 
 * Self explanatory.
 
 #### Global.asax
-* ASP.NET application file.
+* ASP.NET application file. Contains routing examples (in use) as of 12/27/2011
 
 #### humans.txt: 
 * Adjust "team" and other aspects you wish to include OR remove it if you don't believe it to be the cats ass.
@@ -81,6 +84,12 @@
 
 
 ## Changelog:
+### v0.7 - 12/27/2011
+* Adjust main.master to use ResolveClientUrl for stylesheet and modernizr
+* Global.asax - Enabled routing for default and error page
+* Web.config - Adjusted rewrite rule to only lower .aspx pages (so as not to break other things)
+* default.aspx - Added since you probably will need one anyways
+
 ### v0.6 - 11/29/2011
 * Update JQuery version to 1.7.1
 * Adjust main.master to reflect JQuery version changes

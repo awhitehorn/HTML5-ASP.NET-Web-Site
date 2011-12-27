@@ -1,4 +1,4 @@
 ﻿User-agent: *
 Sitemap: http://www.example.com/sitemap.axd
-Disallow: /Error.aspx
+Disallow: /error.aspx
 Allow: /

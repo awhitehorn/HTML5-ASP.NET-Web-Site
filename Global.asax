@@ -5,7 +5,9 @@
 
     void Application_Start(object sender, EventArgs e) 
     {
-        //RouteTable.Routes.MapPageRoute("default", string.Empty, "~/default.aspx");
+        RouteTable.Routes.MapPageRoute("default", string.Empty, "~/default.aspx");
+        RouteTable.Routes.MapPageRoute("error", "error", "~/error.aspx");
+        
     }
     
     void Application_End(object sender, EventArgs e) 
